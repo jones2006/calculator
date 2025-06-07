@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="Stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form class="calculator">
+    <span> &#128511;Calculator</span> 
+        <input type="text" class="input">
+        <div class="form_button">
+            <button type="button" onclick="addvalue('%')">%</button>
+            <button type="button" onclick="clearelement()">C</button>
+            <button type="button" onclick="deleteelement()">DEL</button>
+            <button type="button" onclick="addvalue('/')">/</button>
+        </div>
+        <div class="form_button">
+            <button type="button" onclick="addvalue('1')">1</button>
+            <button type="button" onclick="addvalue('2')">2</button>
+            <button type="button" onclick="addvalue('3')">3</button>
+            <button type="button" onclick="addvalue('+')">+</button>
+        </div>
+        <div class="form_button">
+            <button type="button" onclick="addvalue('4')">4</button>
+            <button type="button" onclick="addvalue('5')">5</button>
+            <button type="button" onclick="addvalue('6')">6</button>
+            <button type="button" onclick="addvalue('-')">-</button>
+        </div>
+        <div class="form_button">
+            <button type="button" onclick="addvalue('7')">7</button>
+            <button type="button" onclick="addvalue('8')">8</button>
+            <button type="button" onclick="addvalue('9')">9</button>
+            <button type="button" onclick="addvalue('*')">*</button>
+        </div>
+        <div class="form_button">
+            <button type="button" onclick="addvalue('00')">00</button>
+            <button type="button" onclick="addvalue('0')">0</button>
+            <button type="button" onclick="addvalue('.')">.</button>
+            <button type="button" onclick="evaluateExpression() " class="evaluate">=</button>
+        </div>
+    </form>
+    <script src="script.js">
+    </script>
+</body>
+</html>
